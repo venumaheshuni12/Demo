@@ -1,0 +1,11 @@
+CREATE Schema if not exists  DW_STG_POC;
+
+USE Schema DW_STG_POC;
+
+ALTER TABLE Sample_Patient_STG ADD COLUMN PHONE NUMBER;
+
+CREATE Schema if not exists  DW_TGT_POC;
+
+USE Schema DW_TGT_POC;
+
+ALTER TABLE Sample_Patient_TGT  ADD COLUMN PHONE NUMBER;
